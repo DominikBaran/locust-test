@@ -1,5 +1,7 @@
 #!/bin/sh
 #   Copyright 2017 Karol Brejna
+#   Dominik Baran's comment: As I am not an Docker expert i based on the code and amazing tutorial created by Karol Brejna:
+#   https://medium.com/locust-io-experiments/locust-io-experiments-running-in-docker-cae3c7f9386e
 #
 #   Licensed under the Apache License, Version 2.0 (the "License");
 #   you may not use this file except in compliance with the License.
