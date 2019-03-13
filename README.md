@@ -1,6 +1,11 @@
 Important: As the example I used amazing tutorial: https://medium.com/locust-io-experiments/locust-io-experiments-running-in-docker-cae3c7f9386e GIT repo: https://github.com/karol-brejna-i/docker-locust/
 and DockerHub project: https://hub.docker.com/r/grubykarol/locust
 
+Additional sources:
+https://wheniwork.engineering/load-testing-with-locust-io-docker-swarm-d78a2602997a
+https://docs.locust.io/en/latest/running-locust-docker.html
+
+
 I wanted the image to:
 * use Python 3 (Python 3.8.0-alpine3.9)
 * use the latest version of Locust
