@@ -2,7 +2,7 @@ FROM python:3.8.0a2-alpine3.9
 
 COPY docker-entrypoint.sh /
 
-RUN    apk --no-cache add --virtual=.build-dep build-base \
+RUN apk add  --no-cache --virtual=.build-dep build-base libffi-dev openssl-dev python-dev curl krb5-dev linux-headers zeromq-dev \
     && apk --no-cache add libzmq \
     && pip install --upgrade pip \
     && pip install --no-cache-dir locustio==0.8.1 \
