@@ -1,4 +1,4 @@
-FROM python:3.7-alpine3.7
+FROM python:3.7.2-alpine3.9
 
 COPY docker-entrypoint.sh /
 
