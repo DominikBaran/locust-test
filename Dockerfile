@@ -3,10 +3,8 @@ FROM python:3.6-alpine3.7
 COPY docker-entrypoint.sh /
 
 RUN    apk --no-cache add --virtual=.build-dep build-base \
-    && pip install -U setuptools pip \
-    && pip install pyzmq --install-option="--zmq=/usr/lib" \
     && apk --no-cache add libzmq \
-    && pip install --no-cache-dir locustio \
+    && pip install --no-cache-dir locustio==0.8.1 \
     && apk del .build-dep \
     && chmod +x /docker-entrypoint.sh
 
