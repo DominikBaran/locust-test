@@ -4,7 +4,7 @@ COPY docker-entrypoint.sh /
 
 RUN    apk --no-cache add --virtual=.build-dep build-base \
     && pip install -U setuptools pip \
-    && pip install pyzmq \
+    && pip install pyzmq --install-option="--zmq=/usr/lib" \
     && apk --no-cache add libzmq \
     && pip install --no-cache-dir locustio \
     && apk del .build-dep \
